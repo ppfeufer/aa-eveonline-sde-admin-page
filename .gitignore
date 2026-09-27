@@ -19,6 +19,8 @@ alliance_auth.sqlite3
 .make/myauth-path
 .make/config-overrides.ini
 
+/aa_eveonline_sde_admin_page/locale/en/
+
 /*.min.css
 /*.min.css.map
 /*.min.js

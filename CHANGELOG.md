@@ -48,8 +48,15 @@ Section Order:
 
 <!-- Your changes go here -->
 
+## [0.0.1] - 2026-09-27
+
+### Added
+
+- First release of the Alliance Auth EVE Online SDE Admin Page app
+
 <!-- Links to be updated upon release -->
 
-[in development]: https://github.com/ppfeufer/REPOSITORY/compare/v0.0.1...HEAD "In Development"
+[0.0.1]: https://github.com/ppfeufer/aa-eveonline-sde-admin-page/commits/v0.0.1 "v0.0.1"
+[in development]: https://github.com/ppfeufer/aa-eveonline-sde-admin-page/compare/v0.0.1...HEAD "In Development"
 [keep a changelog]: http://keepachangelog.com/ "Keep a Changelog"
 [semantic versioning]: http://semver.org/ "Semantic Versioning"

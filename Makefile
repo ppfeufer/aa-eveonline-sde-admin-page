@@ -95,7 +95,7 @@ graph-models: check-python-venv check-myauth-path
 # Prepare a new release
 # Update the graph of the models, translation files and the version in the package
 .PHONY: prepare-release
-prepare-release: pot graph-models
+prepare-release: pot
 	@echo "Preparing a release…"
 	@read -p "New Version Number: " new_version; \
 	if ! grep -qE "^## \[$$new_version\]" CHANGELOG.md; then \
@@ -109,11 +109,6 @@ prepare-release: pot graph-models
 	fi; \
 	sed -i "/__version__ = /c\__version__ = \"$$new_version\"" $(GENERAL__PACKAGE)/__init__.py; \
 	echo "Updated version in $(TEXT_BOLD)$(GENERAL__PACKAGE)/__init__.py$(TEXT_BOLD_END)"; \
-	# Update the version in package.json and rebuild node modules \
-	sed -i -E "\|\"version\"\: |s|\"\: .*|\"\: \"$$new_version\",|g" package.json; \
-	rm -rf node_modules; \
-#	rm package-lock.json; \
-	npm install; \
 	if [[ $$new_version =~ (alpha|beta) ]]; then \
 		echo "$(TEXT_COLOR_RED)$(TEXT_BOLD)Pre-release$(TEXT_RESET) version detected!"; \
 		git restore $(DJANGO__TRANSLATION_DIRECTORY)/django.pot; \

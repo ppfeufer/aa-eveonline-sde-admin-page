@@ -38,6 +38,9 @@ ______________________________________________________________________
   - [Bare Metal Installation](#bare-metal-installation-1)
   - [Docker Installation](#docker-installation-1)
 - [Accessing the Admin Status Page](#accessing-the-admin-status-page)
+- [Changelog](#changelog)
+- [Translation Status](#translation-status)
+- [Contributing](#contributing)
 
 <!-- mdformat-toc end -->
 
@@ -144,3 +147,22 @@ docker compose --env-file=.env up -d
 Access to the status page is restricted to users with the `eve_sde.admin_access`
 permission. You can assign this permission to a user or group via the Django admin
 interface.
+
+## Changelog<a name="changelog"></a>
+
+To keep track of all changes, please read the
+[Changelog](https://github.com/ppfeufer/aa-eveonline-sde-admin-page/blob/master/CHANGELOG.md).
+
+## Translation Status<a name="translation-status"></a>
+
+[![Translation status](https://weblate.ppfeufer.de/widget/alliance-auth-apps/aa-eveonline-sde-admin-page/matrix-auto.svg)](https://weblate.ppfeufer.de/engage/alliance-auth-apps/)
+
+Do you want to help translate this app into your language or improve the existing
+translation? - [Join our team of translators](https://weblate.ppfeufer.de/engage/alliance-auth-apps/)!
+
+## Contributing<a name="contributing"></a>
+
+You want to contribute to this project? That's cool!
+
+Please make sure to read the [contribution guidelines](https://github.com/ppfeufer/aa-eveonline-sde-admin-page/blob/master/CONTRIBUTING.md).\
+(I promise, it's not much, just some basics)

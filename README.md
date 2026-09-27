@@ -1,1 +1,1 @@
-# django-eveonline-sde-admin-page
+# aa-eveonline-sde-admin-page

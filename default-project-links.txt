@@ -1,0 +1,8 @@
+urls.Changelog = "https://github.com/ppfeufer/aa-bulletin-board/blob/master/CHANGELOG.md"
+urls.Codecov = "https://codecov.io/gh/ppfeufer/aa-bulletin-board"
+urls.Discord = "https://discord.gg/fjnHAmk"
+urls.Documentation = "https://github.com/ppfeufer/aa-bulletin-board/blob/master/README.md"
+urls.Donation = "https://ko-fi.com/ppfeufer"
+urls.GitHub = "https://github.com/ppfeufer/aa-bulletin-board"
+urls.Tracker = "https://github.com/ppfeufer/aa-bulletin-board/issues"
+urls.Translation = "https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-bulletin-board/"

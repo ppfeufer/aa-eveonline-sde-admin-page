@@ -58,7 +58,7 @@ Make sure you're in the virtual environment (venv) of your Alliance Auth install
 Then install the latest version:
 
 ```bash
-pip install aa-eveonline-sde-admin-page==0.0.1
+pip install aa-eveonline-sde-admin-page==0.0.2
 ```
 
 #### Step 2: Update Your AA Settings<a name="step-2-update-your-aa-settings"></a>
@@ -86,7 +86,7 @@ Now, restart your Auth.
 Add the app to your `conf/requirements.txt`:
 
 ```text
-aa-eveonline-sde-admin-page==0.0.1
+aa-eveonline-sde-admin-page==0.0.2
 ```
 
 #### Step 2: Update Your AA Settings<a name="step-2-update-your-aa-settings-1"></a>
@@ -121,7 +121,7 @@ virtual environment (venv) of your Alliance Auth installation.
 Then run the following command to update the app:
 
 ```bash
-pip install aa-eveonline-sde-admin-page==0.0.1
+pip install aa-eveonline-sde-admin-page==0.0.2
 ```
 
 And restart your Auth.
@@ -132,7 +132,7 @@ To update your existing installation of AFAT, all you need to do is update the
 respective line in your `conf/requirements.txt` file to the latest version.
 
 ```text
-aa-eveonline-sde-admin-page==0.0.1
+aa-eveonline-sde-admin-page==0.0.2
 ```
 
 Then rebuild your containers:

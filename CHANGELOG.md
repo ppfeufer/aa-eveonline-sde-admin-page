@@ -48,6 +48,11 @@ Section Order:
 
 <!-- Your changes go here -->
 
+### Added
+
+- DataTables column mapping so the columns can be addressed by their names instead of
+  their index
+
 ## [0.0.3] - 2026-11-03
 
 ### Changed

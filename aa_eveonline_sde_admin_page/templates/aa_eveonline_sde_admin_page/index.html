@@ -75,13 +75,19 @@
 
             'use strict';
 
+            const dtColumn = {
+                section: 0,
+                buildNumber: 1,
+                lastUpdated: 2,
+                rows: 3
+            }
             const culumnControlDefaults = [
                 {
-                    target: 0,
+                    target: dtColumn.section,
                     content: []
                 },
                 {
-                    target: 1,
+                    target: dtColumn.buildNumber,
                     content: ['search']
                 }
             ];
@@ -90,18 +96,20 @@
                 labelFilter: '{{ l10nFilterBy|escapejs }}',
                 columns: [
                     {
-                        idx: 0,
+                        idx: dtColumn.section,
                         labelDropdownAll: '{{ l10nAllSections|escapejs }}'
                     },
                     {
-                        idx: 1,
+                        idx: dtColumn.buildNumber,
                         labelDropdownAll: '{{ l10nAllBuildNumbers|escapejs }}'
                     }
                 ]
             }
 
             new DataTable("#sde-table", {
-                order: [[0, "asc"]],
+                order: [
+                    [dtColumn.section, "asc"]
+                ],
                 pageLength: 25,
                 responsive: true,
                 ordering: {
@@ -110,12 +118,18 @@
                 },
                 columnDefs: [
                     {
-                        targets: [0, 1],
+                        targets: [
+                            dtColumn.section,
+                            dtColumn.buildNumber
+                        ],
                         columnControl: culumnControlDefaults,
                         sortable: false,
                     },
                     {
-                        targets: [2, 3],
+                        targets: [
+                            dtColumn.lastUpdated,
+                            dtColumn.rows
+                        ],
                         columnControl: columnControlDisabled,
                     }
                 ],
